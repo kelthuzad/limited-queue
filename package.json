@@ -1,0 +1,39 @@
+{
+  "name": "limited-queue",
+  "version": "1.0.0",
+  "description" : "An extended version of async.queue which allows to specify a maximum number of total jobs that are expected to be executed",
+  "private": true,
+  "main" : "limited-queue.js",
+  "files" : [
+    "limited-queue.js",
+    "test"
+  ],
+  "author": {
+    "name": "Jakob Kneissl",
+    "email": "jakob_kneissl@web.de"
+  },
+  "keywords": [
+    "async",
+    "queue",
+    "limit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelthuzad/limited-queue.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/kelthuzad/limited-queue/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "minify": "uglifyjs limited-queue.js -c -m -o limited-queue.min.js"
+  },
+  "dependencies": {
+    "async": "^1.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "uglify-js": "^2.6.2"
+  }
+}
