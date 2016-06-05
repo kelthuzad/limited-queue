@@ -7,7 +7,8 @@ Everything else works like [async.queue](https://github.com/caolan/async/blob/ma
 ## Usage
 
 The syntax to create a limited-queue: `queue(worker, [concurrency], maxTaskCount)`
-__Arguments___
+
+__Arguments__
 * `worker(task, callback, currentTaskCount)`: The worker that processes the tasks that are pushed to the queue (see [async.queue](https://github.com/caolan/async/blob/master/README.md#queue)).
   The additional parameter `currentTaskCount` is an Integer containing the number of tasks that were already completed by the queue.
 * `concurrency`: The number of tasks that may be processed in parallel (see [async.queue](https://github.com/caolan/async/blob/master/README.md#queue)). Can be omitted.
@@ -20,6 +21,7 @@ __Queue objects (in addition to async.queue)__
 * `currentTaskCount`: An Integer to determine how many tasks were completed yet. 
 
 __Example__
+
 ```
 var limitedQueue = require('limited-queue');
 
