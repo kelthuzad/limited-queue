@@ -1,12 +1,13 @@
 {
   "name": "limited-queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description" : "An extended version of async.queue which allows to specify a maximum number of total jobs that are expected to be executed",
   "private": false,
   "main" : "limited-queue.js",
   "files" : [
     "limited-queue.js",
-    "test"
+    "test",
+    "limited-queue.min.js"
   ],
   "author": {
     "name": "Jakob Kneissl",
